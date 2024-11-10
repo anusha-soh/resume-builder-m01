@@ -20,6 +20,18 @@
             
         }
 
+        .profile-img {
+            border: 3px solid var(--light-color) ;
+            overflow: hidden;
+            border-radius: 50%; 
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
         .container {
             display: flex;
             max-width: 1200px;
@@ -28,7 +40,7 @@
         }
 
         .sidebar {
-            width: 35%;
+            width: 45%;
             height: 100%;
             background-color: var(--primary-color);
             padding: 20px;
@@ -73,8 +85,20 @@
             color: var(--text-color);
         } 
 
+
+
         .main-container{
             padding: 5%;
+            color: var(--text-color);
+        }
+
+        .main-container p{
+            padding: 0.5rem;
+        }
+
+        .main-container li{
+            margin: 10px;
+
         }
 
         .profile-img {
@@ -180,7 +204,7 @@
 
             .sidebar {
                 width: 100%;
-                padding: 0 25px;
+                padding: 40px 25px;
                 
             }
 
