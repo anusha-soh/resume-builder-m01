@@ -1,0 +1,195 @@
+ :root {
+            --primary-color: #006837;
+            --secondary-color: #00af5c;
+            --text-color: #333333;
+            --light-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            list-style: none;
+
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 1px 1px 20px 2px var(--primary-color) ;
+        }
+
+        .sidebar {
+            width: 35%;
+            height: 100%;
+            background-color: var(--primary-color);
+            padding: 20px;
+            color: var(--light-color);
+        }
+
+        .prof-name{
+            width: 90%;
+            margin: 20px auto;
+
+
+        }
+
+        .person-name{
+            font-size: 2.5rem;
+            text-align: center;
+            line-height: 40px;
+            margin: 15px;
+        }
+
+        .person-profession{
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 25px;
+
+        }
+        table{
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        td , th {
+            padding: 2px 5px ;
+        }
+
+        .sidebar i{
+            color: var(--light-color);
+        }
+
+        .main-container i{
+            color: var(--text-color);
+        } 
+
+        .main-container{
+            padding: 5%;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: var(--light-color);
+            margin: 20px auto;
+        }
+
+        .contact-section,
+        .follow-section,
+        .language-section,
+        .hobbies-section {
+            margin-top: 30px;
+            padding: 15px 0;
+            border-top: 2px solid var(--secondary-color);
+        }
+
+        .section-name {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+
+         th{
+            font-size: large;
+        }
+
+        .contact-list th, .social-list th {
+            display: table-cell;  /* Show table headers by default */
+        }
+        
+        
+
+
+        .language-dots {
+            margin-top: 10px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: var(--light-color);
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .content-section {
+            margin-bottom: 40px;
+        }
+
+        .content-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .content-section h2 i {
+            font-size: 24px;
+        }
+
+        .education-item,
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .education-item::before,
+        .experience-item::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .section-name {
+              font-size: 2.25em;
+              
+              margin-bottom: 15px;
+          } 
+          .main-section-name {
+            font-size: 2.25em;
+            text-align: center;
+            
+            
+        }            
+
+            .sidebar {
+                width: 100%;
+                padding: 0 25px;
+                
+            }
+
+            .main-container {
+                padding: 10%;
+            }
+        }
+          .contact-list th p, .social-list th p {
+            display: none;
+          }
+
+          
